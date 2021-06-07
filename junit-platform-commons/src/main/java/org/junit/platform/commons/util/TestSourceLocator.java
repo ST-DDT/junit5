@@ -131,7 +131,7 @@ public final class TestSourceLocator {
 			final String className = element.getClassName();
 			final String rootClassName = className.replaceFirst("\\$.*", "");
 			final int lineNumber = element.getLineNumber();
-			return URI.create("class:/" + rootClassName + (lineNumber > 0 ? "?line=" + lineNumber : ""));
+			return URI.create("class:" + rootClassName + (lineNumber > 0 ? "?line=" + lineNumber : ""));
 		}
 
 	}
